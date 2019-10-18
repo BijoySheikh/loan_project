@@ -1,6 +1,7 @@
 <?php  
 
 //Member table data Insert
+include('sql_config.php');
 
 include('db_pdo.php');
 
@@ -15,7 +16,7 @@ $data = array(
 );
 
 $query = "
- INSERT INTO tbl_sample 
+ INSERT INTO ".$m_name.$f_name." 
  (first_name, last_name, test) VALUES 
  (:first_name, :last_name, :test)
 ";

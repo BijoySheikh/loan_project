@@ -10,9 +10,6 @@ $query="DELETE FROM `member_data`  WHERE id=$id";
 mysqli_query($conn, $query);
 
 
-$query="SELECT FROM `member_data`  WHERE id=$id";
-mysqli_query($conn, $query);
-
 
 $file = "images/" ;
 
@@ -32,7 +29,7 @@ $message = '';
 
 $form_data = json_decode(file_get_contents("php://input"));
 
-$query = "DELETE FROM tbl_sample WHERE id = '".$form_data->id."'";
+$query = "DELETE FROM member_premier_data WHERE id = '".$form_data->id."'";
 
 $statement = $connect->prepare($query);
 if($statement->execute())

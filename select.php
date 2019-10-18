@@ -4,7 +4,7 @@
  
 include('db_pdo.php');
 
-$query = "SELECT * FROM tbl_sample ORDER BY id DESC";
+$query = "SELECT * FROM member_premier_data ORDER BY id DESC";
 $statement = $connect->prepare($query);
 if($statement->execute())
 {

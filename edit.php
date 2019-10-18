@@ -17,7 +17,7 @@ $data = array(
 );
 
 $query = "
- UPDATE tbl_sample 
+ UPDATE member_premier_data 
  SET first_name = :first_name, last_name = :last_name, test = :test 
  WHERE id = :id
 ";
